@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Farol da meia-noite</title>
+</head>
+<body>
+   <main>
+      <div class="passo ativo" id="passo-0">
+        <img src="img/Farol.jpg" alt="">
+        <p>Em meio a madrugada fria de um dia qualquer no inverno, um nevoeiro espesso se apoderou das redondezas do seu farol. Por mais que seja a sua obrigação zelar pela vida dos marinheiros desafortunados, ainda há alguns problemas para resolver antes. Tanto a luz quanto o aquecimento do farol estão quebrados. Qual você resolverá primeiro?
+        </p>
+        <button class="btn-proximo" data-proximo="1">Consertar o farol</button>
+        <button class="btn-proximo" data-proximo="2">Consertar o aquecimento do farol</button>
+      </div>
+      <div class="passo" id="passo-1">
+        <img src="img/Corredor.jpg" alt="">
+        <p>Você se dirige ao porão, onde há alguns conjuntos de lâmpadas reservas. O porão está frio e escuro, o chão está escorregadio e você consegue ouvir alguns estalos vindos do final da escadaria.</p>
+        <button class="btn-proximo" data-proximo="3">Continuar o seu caminho</button>
+        <button class="btn-proximo" data-proximo="4">Arregar</button>
+      </div>
+      <div class="passo" id="passo-3">
+        <p>Ao final da escadaria, você não encontra nada mais que um grande cômodo escuro e úmido. Mas, ao pegar as lâmpadas, você tem um mal pressentimento. O lampião que você estava usando para se locomover em meio a escuridão desapareceu.</p>
+        <button class="btn-proximo" data-proximo="7">Procurar pelo lampião</button>
+        <button class="btn-proximo" data-proximo="8">Sair correndo em meio a escuridão</button>
+      </div>
+      <div class="passo" id="passo-7">
+        <img src="img/Morreu.jpg" alt="">
+        <p>Enquanto tateava as caixas de suprimentos, algo estranho toca a sua mão. Ao tentar descobrir o que era, uma espécie de tentáculo esponjoso começa a subir pelo seu braço. Paralisado pelo choque, você se vê incapaz de reagir. Então a criatura se apodera de seu corpo.</p>
+      </div>
+      <div class="passo" id="passo-8">
+        <img src="img/Morreu.jpg" alt="">
+        <p>Por um momento, o terror tomou conta por completo de seu corpo. Como uma espécie de instinto natural, as suas pernas se locomovem o mais rápido possível para a saída. Entretanto, o medo que lhe sufocava, acabou sendo um grande empecilho, fazendo com que você caísse no chão.
+          A criatura se apodera de seu corpo.</p>
+      </div>
+      <div class="passo" id="passo-4">
+        <p>Você volta para o seu quarto, mas o frio está muito mais intenso que antes.</p>
+        <button class="btn-proximo" data-proximo="2">Consertar o aquecimento do farol</button>
+        <button class="btn-proximo" data-proximo="9">Deixar assim mesmo</button>
+      </div>
+      <div class="passo" id="passo-9">
+        <img src="img/frio.jpg" alt="">
+        <p>Você morre de hipotermia.</p>
+      </div>
+      <div class="passo" id="passo-2">
+        <p>Decidido a consertar o aquecedor, você se dirige até a sala dos fundos, onde está localizado o sistema de aquecimento da propriedade. Ao chegar lá você encontra alguns aparelhos roídos, além de um estranho barulho que emana de dentro de um cano.</p>
+        <button class="btn-proximo" data-proximo="5">Olhar dentro do cano</button>
+        <button class="btn-proximo" data-proximo="6">Cutucar o cano com uma vareta</button>
+      </div>
+      <div class="passo" id="passo-5">
+        <p>Ao colocar seus olhos em uma das estremidades do cano, é possível analizar uma grande penugem preta de costas para você. Mas, por causa das vibrações, a coisa se vira na sua direção enfurecida.
+          Um rato arranca o seu olho.</p>
+      </div>
+      <div class="passo" id="passo-6">
+        <p>De dentro do cano sai apressadamente um grandioso rato preto. Mas pelo menos agora você tem o equipamento nescessário para o reparo.</p>
+        <button class="btn-proximo" data-proximo="10">Consertar o cano</button>
+      </div>
+      <div class="passo" id="passo-10">
+        <p>Com o cano consertado, agora lhe resta somente o que fazer em relação a luz do farol. Por sorte, você se lembra que há ainda uma luz um pouco fraca que pode ser utilizada como substituta até o amanhecer. Ela está localizada em um canto empoeirado de seu quarto.</p>
+        <button class="btn-proximo" data-proximo="11">Buscar a lâmpada</button>
+      </div>
+      <div class="passo" id="passo-11">
+        <img src="img/Escada.jpg" alt="">
+        <p>Ao pegar a lâmpada nescessária, resta somente a energia nescessária para levar essa lâmpada escadaria a cima. Todavia, ainda há uma pequena geringonça que pode ser usada como elevador.</p>
+        <button class="btn-proximo" data-proximo="12">Usar a escadaria</button>
+        <button class="btn-proximo" data-proximo="13">Usar a geringonça</button>
+      </div>
+      <div class="passo" id="passo-12">
+        <img src="img/caiu.jpg" alt="">
+        <p>Você leva um bom tempo até levar a lâmpada ao meio da escadaria. Entretanto, — por causa da umidade do local — um degrau, que já estava apodrecido, acaba quebrando abaixo de seus pés. Por causa de um pequeno desequilíbrio você acaba derrubando a lâmpada, que se despedaça no chão.</p>
+        <button class="btn-proximo" data-proximo="14">Os marinheiros que se virem</button>
+      </div>
+      <div class="passo" id="passo-13">
+        <p>Pela falta de manutenção a geringonça acaba quebrando, fazendo com que a lâmpada caia em cima de sua cabeça.</p>
+      </div> 
+   </main>
+   <script src="script.js"></script>
+</body>
+</html>
